@@ -2046,3 +2046,123 @@ body {
   width: 100px; /* Adjust size as needed */
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .counter-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .counter {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .counter h2 {
+    font-size: 16px;
+  }
+
+  .count {
+    font-size: 24px;
+  }
+
+  .icon img {
+    width: 40px;
+  }
+
+  .footer .footer-info,
+  .footer .footer-links,
+  .footer .footer-links {
+    display: none;
+  }
+
+  .footer .footer-contact {
+    text-align: center;
+  }
+
+  .footer .footer-info .social-links {
+    justify-content: center;
+  }
+
+  .footer .footer-contact p {
+    text-align: center;
+  }
+
+  .footer .footer-info .logo {
+    justify-content: center;
+  }
+
+  .footer .footer-links ul {
+    display: inline-flex ;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-services .container {
+    padding-left: 15%;
+  }
+
+  .featured-services .col-lg-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .featured-services .service-item {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .featured-services .service-item div {
+    text-align: center;
+  }
+
+  .featured-services .service-item .readmore {
+    justify-content: center;
+  }
+
+  .container h3,
+  .container p {
+    text-align: center;
+  }
+
+  .container p strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .get-a-quote .quote-bg {
+    display: none;
+  }
+  
+  .get-a-quote .col-lg-7 {
+    width: 100%;
+  }
+
+  .featured-services .container {
+    padding-left: 5%;
+  }
+
+  .featured-services .col-lg-4 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .featured-services .service-item {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .featured-services .service-item div {
+    text-align: center;
+  }
+
+  .featured-services .service-item .readmore {
+    justify-content: flex-start;
+  }
+}

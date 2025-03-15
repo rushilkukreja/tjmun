@@ -25,6 +25,89 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    body, p, h1, h2, h3, h4, h5, h6, a, span, li {
+      font-family: 'EB Garamond', serif !important;
+    }
+    
+    .navbar ul li a {
+      font-family: 'EB Garamond', serif !important;
+    }
+    
+    .container {
+      font-family: 'EB Garamond', serif !important;
+    }
+
+    .team .member {
+      display: flex;
+      align-items: stretch; /* Ensures both elements stretch to the same height */
+      justify-content: start;
+      padding: 0px 0;
+    }
+
+  .team .member .member-img {
+    flex: 0 0 40%; /* Image takes up 40% width */
+    max-width: 40%;
+    display: flex;
+  }
+
+  .team .member .member-img img {
+    width: 100%;
+    height: 100%; /* Ensures it matches the height of the text box */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 0; /* Keeps image rectangular */
+  }
+
+
+  .team .member .member-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff; /* Keeps text inside a white box */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Removes rounding */
+    height: auto; /* Matches the image height dynamically */
+  }
+
+  .team .member .member-info h4 {
+    font-size: 1.8rem;
+    color: #0044cc;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .team .member .member-info span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .team .member .member-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .member-info p {
+    margin: 2px 0;
+  }
+
+  .member-info p,
+  .member-info span,
+  .member-info h4 {
+    font-style: normal !important;
+  }
+
+  @media (max-width: 768px) {
+    .member-info p {
+      display: none;
+    }
+  }
+    
+  </style>
+
 </head>
 
 <body>
@@ -46,19 +129,75 @@
           <li><a href="Calendar.html">CALENDAR</a></li>
           <li class="dropdown"><a href="TECHMUN.html"><span>TECHMUN</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                  <li><a href="Registration.html">Registration</a></li>
-                  <li><a href="Invitation.html">Invitation</a></li>
-                  <li><a href="Directors.html">Directors</a></li>
-                  <li><a href="Committees.html">Committees</a></li>
-                  <li><a href="Schedule.html">Schedule</a></li>
-                  <li><a href="Position Papers.html">Position Papers</a></li>
-                  <li><a href="Guest Speakers.html">Guest Speakers</a></li>
+              <li class="invitation-link"><a href="Invitation.html">Invitation</a></li>
+              <li><a href="Registration.html">Registration</a></li>
+              <li><a href="Directors.html">Directors</a></li>
+              <li class="dropdown"><a href="Committees.html"><span>Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="Committees.html">All Committees</a></li>
+                  <li class="dropdown"><a href="#"><span>Middle School</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown"><a href="#"><span>General Assemblies (GAs)</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="UNHCR.html">United Nations High Commissioner for Refugees (UNHCR)</a></li>
+                          <li><a href="WHO.html">World Health Organization (WHO)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Specialized/Regional/ECOFINs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Titanic.html">Titanic: The Sinking of the Unsinkable</a></li>
+                          <li><a href="Oh.html">Oh, Despicable Me!: Gru’s Grand Scheme</a></li>
+                          <li><a href="To.html">To Melt or Merge: Ben and Jerry's Transition Board, 2007</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Crisis Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Blast.html">Blast Off: Space Race, 1967</a></li>
+                          <li><a href="Lightning.html">Lightning Strikes Twice: Flash’s Foes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><span>High School</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown"><a href="#"><span>General Assemblies (GAs)</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="DISEC.html">Disarmament and International Security Committee (DISEC)</a></li>
+                          <li><a href="UNICEF.html">United Nations International Children's Emergency Fund (UNICEF)</a></li>
+                          <li><a href="ECOFIN.html">Economic and Financial Affairs Council (ECOFIN)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Specialized/Regional/ECOFINs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Run.html">Run It Back, Turbo: The Creation of NASCAR, 1947</a></li>
+                          <li><a href="Return.html">Return of the Dynasty: Commanders, 2028</a></li>
+                          <li><a href="Quantum.html">Quantum Leap: NVIDIA’s Semiconductor Revolution</a></li>
+                          <li><a href="The.html">The Scranton Summit: Dunder Mifflin's Demise</a></li>
+                          <li><a href="Operation.html">Operation Infra: INTERPOL’s Global Manhunt (Double-Del)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Crisis Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Fractured.html">Fractured Allegiance: The Sokovia Accords</a></li>
+                          <li><a href="XOXO.html">XOXO: Gossip Girl</a></li>
+                          <li><a href="JCC_Cali.html">JCC Battle of the Cartels, 1990: Cali</a></li>
+                          <li><a href="JCC_Medellin.html">JCC Battle of the Cartels, 1990: Medellin</a></li>
+                          <li><a href="ByteBlood.html">ByteBlood: The DNA Privacy and Biotech Scandal (Double-Del)</a></li>
+                          <li><a href="Ad-Hoc.html">Ad-Hoc Crisis Committee of the Secretary General</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
-              
+              </li>
+              <li><a href="Schedule.html">Schedule</a></li>
+              <li><a href="Position_Papers.html">Position Papers</a></li>
+              <li><a href="Conference_Policies.html">Conference Policies</a></li>
+              <li><a href="Guest_Speakers.html">Guest Speakers</a></li>
+            </ul>
           </li>
           <li><a href="Forms.html">FORMS</a></li>
           <li><a href="Awards.html">AWARDS</a></li>
-          <li><a href="Contact Us.html">CONTACT US</a></li>
         </ul>
       </nav>
 
@@ -76,7 +215,6 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
               <h2>DIRECTORS</h2>
-              <p>Our directors for TECHMUN XXXII will be added soon!</p>
             </div>
           </div>
         </div>
@@ -89,6 +227,184 @@
         </div>
       </nav>
     </div>
+
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/adithiya.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Adithiya Balaguru</h4>
+                <span>Secretary-General</span>
+                <p>Bio coming soon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 2 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/rohith-d.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Rohith Yelisetty</h4>
+                <span>Under Secretary-General</span>
+                <p>Hello everyone! It is my honor to serve as your Undersecretary-General for the 32nd iteration of TechMUN. For the past few months, our team has been working endlessly to bring you the best conference possible, filled with engaging debate, creative solutions, and unforgettable memories. Whether you’re a first-time delegate or a seasoned veteran, TechMUN is a place for growth, learning, and forming lasting friendships.
+                </p>
+                <p>
+                  My journey in Model UN began years ago, and what started as a simple interest quickly became an integral part of my life. From late-night crisis arcs to heated GA debates, MUN has shaped the way I think, speak, and lead. But beyond the awards and resolutions, it’s the people - the friends, delegates, and staff - who make this experience truly special. I encourage each of you to step out of your comfort zone this weekend, challenge yourself, and embrace the spirit of diplomacy.
+                </p>
+                <p>
+                  Outside of MUN, you can usually find me working on robotics, playing basketball, or passionately rotting in my bed watching TikTok. I cannot wait to see the energy and enthusiasm you all bring to TechMUN XXXII!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/lavanya.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Lavanya Krishna</h4>
+                <span>Director of Delegations</span>
+                <p>Hi everyone! I’m Lavanya Krishna, and I’m thrilled to serve as your Director of Delegations for TechMUN XXXII! I can’t wait to help bring to life the biggest and most exciting TechMUN yet—for all the delegates, students, and dedicated organizers who make this event possible. When I first joined Model UN in high school, it wasn’t entirely by choice. I was peer-pressured into it as almost everyone I knew was buzzing about the Model UN training, excited for conferences and debate. But once I got involved, I quickly found inspiration in the energy around me and became part of  the TJMUN family. Four years later, as a senior, I look back fondly on all the unforgettable conference experiences—the passionate debates, the laughter in committee, and the amazing people I’ve met along the way. I hope TechMUN XXXII gives you moments just like that—memories you’ll carry with you long after the committee session is over.
+                </p>
+                <p>
+                  Outside of pestering head delegates and faculty sponsors with numerous emails, you can usually find me getting food with my friends, obsessing over the perfect matcha order, or overanalyzing my favorite movies and TV shows at midnight. I'm truly excited to see what new solutions and ideas each one you brings to this iteration of TechMUN!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 4 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/akshaya.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Akshaya Lohia</h4>
+                <span>Director-General</span>
+                <p>Bio coming soon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 5 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="500">
+              <div class="member-img">
+                <img src="assets/img/aditi-d.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Aditi Kodukula</h4>
+                <span>Director of Hospitality</span>
+                <p>Hi everyone! My name is Aditi Kodukula, and I’m excited to be serving as your Director of Hospitality for TechMUN 2025! This is my third year with TJMUN and I’m excited to be working with my fellow directors and sponsors to hopefully bring you guys a great conference experience. Whether it was cheering for the Commanders in a Philly committee room (I don’t watch football, at all) or creating a pink mafia every crisis I attend, MUN, and TJMUN in particular, has given me one of the best communities I’ve ever experienced. 
+                </p>
+                <p>
+                  Outside of Model UN, you can find me dancing, napping, or watching Organic Chemistry Tutor to gaslight myself into thinking I studied. You can also find me [learning] how to drive and [not] crashing into [any] curbs to hit up my neighborhood Starbucks. Just remember, it’s always the car’s fault.
+                </p>
+                <p>
+                  As your Director of Hospitality, my goal for you all at TechMUN is to have a comfortable and fun experience before, during, and after committee. Don’t forget to send some candygrams and gavelgrams to your crush or donate to our phil envelope! Embarrassing your chairs (I’ll give you guys ideas) AND sending money to a good cause sounds like a great deal to me! Having attended this conference as a delegate myself, I know that it can be stressful to be a leader, especially in a big room. But, with some really exciting committees, incredible chairs, and a great secretariat I am confident that TechMUN will be a thrilling and comfortable experience for you all. I can’t wait to see you all in April, best of luck!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 6 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/rushil-d.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Rushil Kukreja</h4>
+                <span>Director of Technology</span>
+                <p>Goooood morning delegates! My name is Rushil Kukreja and I’m honored to serve as your Director of Technology for TechMUN XXXII. This is my third year doing MUN, and ever since I joined, I’ve loved every second of it, from debating interstellar diplomacy in a 24th century committee to channeling my inner mob boss from Goodfellas. From running around the streets of Williamsburg and Philadelphia, to planning opening speeches 15 seconds before I have the floor, to finding a way to be heard in a 75 delegation bloc, MUN never fails to keep me on my toes. Outside of MUN, you’ll find me launching rockets, filling up entire whiteboards with physics problems, or finding new ways to make the world a little brighter.</p>
+                <p>To all the delegates joining us for TechMUN this year, my biggest advice is to have fun. Sometimes mergers can be stressful or updates might not go your way, but the most important part of any conference are the memories you take with you, a gift better than any award. Whether this is your first conference or your last, be sure to make the most of it.                </p>
+                <p>	As your Director of Technology, I’ll be ensuring that TechMUN runs smoothly and that this year’s conference is our best yet. Please feel free to reach out if you have any questions. I can’t wait to see you all in April, and good luck delegates!                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 7 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="700">
+              <div class="member-img">
+                <img src="assets/img/ruhaan-d.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ruhaan Singh</h4>
+                <span>Director of Media</span>
+                <p>What’s up Delegates! My name is Ruhaan Singh, and I will be serving as your Director of Media for TechMUN XXXII. For 3 years, Model UN has been a huge part of my life. From working through a committee of Death Eaters to dancing in a giant Panda suit last TechMUN, MUN has taken me through the bitter and the sweet. While it may sound cheesy, some of my closest friends have come from this club, and I am ready to pay it back. </p>
+                <p>Throughout this conference, you are going to see me running around (along with my army of staffers) and making sure that every part of this conference is documented. Whether you are giving one of the best speeches of your life or are trying to get your first idea heard during unmods, my goal is to make sure that TechMUN has memories that last. So whether you see me (or not), please remember to smile and enjoy what TJ MUN has to offer in April.</p>
+                <p>Other than MUN, I help run my school's Indian Culture Club, otherwise known as Namaste. You can see me trying to mold some terrible dancers into some pretty decent bhangra performers. In my free time, I like to dance, listen to music, take photos, and hang out with my friends.</p>
+                <p>So with all this said, wear your best outfit, bring your smile, and get ready for TechMUN XXXII. See you soon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 8 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="800">
+              <div class="member-img">
+                <img src="assets/img/anirudh-d.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Ani Chinthakindi</h4>
+                <span>Director of Crisis</span>
+                <p>Hey guys! I’m Anirudh Chinthakindi, I’m a senior at TJ, and I’ll be your Director of Crisis Committees this year. I’ve been doing Model UN since 8th grade and after coming to TJ, it’s become a big part of my school career. In my opinion, MUN is so great because it gives me so many opportunities to express myself and grow as a person. From getting better at public speaking, learning that writing speeches during opening ceremonies makes them even better, and meeting some awesome people from all around the world, MUN has truly been a great experience for me and many of my peers.
+                </p>
+                <p>Outside of MUN, I enjoy playing basketball and learning how to play another crazy fast sonata on the piano. On weekends, I try to balance my time between trying new food places, messing around with my friends, and sleeping.
+                </p>
+                <p>Coming back to TechMUN, throughout the conference, we will be looking out for delegates with good communication skills, an open imagination for amazing crisis arcs, and passionate debate for every motion. I hope that all of you come out of TechMUN as better delegates, with evolved communication skills, improved collaboration skills, and a better knowledge of how to create more conniving crisis arcs. Remember, this is just a start for a long and amazing MUN career; I hope that you have fun and enjoy your time at TECHMUN XXXII.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Row 9 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="member" data-aos="fade-up" data-aos-delay="900">
+              <div class="member-img">
+                <img src="assets/img/anmol.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Anmol Karan</h4>
+                <span>Director of Specialized</span>
+                <p>Hey everyone! My name is Anmol Karan, and I am thrilled to be your Director of Specialized Agencies this year. I am a senior at TJ and have been participating in MUN for the past four years. From being forced to dance  in committee to running around each committee with Candygrams and donations as Director of Hospitality last year, MUN has been one of my best experiences in high school. As an avid delegate myself, I understand the thrill and potential challenges involved in partaking in MUN conferences. But it’s helped me grow as a speaker and communicator, and I hope your experience at TechMUN helps you grow in the same way.</p>
+                <p>Outside of school, I am a huge fan of the Washington Commanders. I watch all their games and love talking about football to my friends and family. I like to play the bassoon as part of TJ’s band and (occasionally) orchestra and I love listening to music.</p>
+                <p>	In committee, I’ll be looking for creative solutions to the unique problems that you face. Don’t be afraid to think outside the box and expand your knowledge of the topics.  Above all, have fun, meet interesting people, and enjoy your time at TECHMUN XXXII.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
 
   </main>
 
@@ -118,7 +434,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
               6560 Braddock Rd <br>

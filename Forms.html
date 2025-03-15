@@ -25,6 +25,20 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    body, p, h1, h2, h3, h4, h5, h6, a, span, li {
+      font-family: 'EB Garamond', serif !important;
+    }
+    
+    .navbar ul li a {
+      font-family: 'EB Garamond', serif !important;
+    }
+    
+    .container {
+      font-family: 'EB Garamond', serif !important;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -46,19 +60,75 @@
           <li><a href="Calendar.html">CALENDAR</a></li>
           <li class="dropdown"><a href="TECHMUN.html"><span>TECHMUN</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                  <li><a href="Registration.html">Registration</a></li>
-                  <li><a href="Invitation.html">Invitation</a></li>
-                  <li><a href="Directors.html">Directors</a></li>
-                  <li><a href="Committees.html">Committees</a></li>
-                  <li><a href="Schedule.html">Schedule</a></li>
-                  <li><a href="Position Papers.html">Position Papers</a></li>
-                  <li><a href="Guest Speakers.html">Guest Speakers</a></li>
+              <li class="invitation-link"><a href="Invitation.html">Invitation</a></li>
+              <li><a href="Registration.html">Registration</a></li>
+              <li><a href="Directors.html">Directors</a></li>
+              <li class="dropdown"><a href="Committees.html"><span>Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="Committees.html">All Committees</a></li>
+                  <li class="dropdown"><a href="#"><span>Middle School</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown"><a href="#"><span>General Assemblies (GAs)</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="UNHCR.html">United Nations High Commissioner for Refugees (UNHCR)</a></li>
+                          <li><a href="WHO.html">World Health Organization (WHO)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Specialized/Regional/ECOFINs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Titanic.html">Titanic: The Sinking of the Unsinkable</a></li>
+                          <li><a href="Oh.html">Oh, Despicable Me!: Gru’s Grand Scheme</a></li>
+                          <li><a href="To.html">To Melt or Merge: Ben and Jerry's Transition Board, 2007</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Crisis Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Blast.html">Blast Off: Space Race, 1967</a></li>
+                          <li><a href="Lightning.html">Lightning Strikes Twice: Flash’s Foes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><span>High School</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul class="sub-menu">
+                      <li class="dropdown"><a href="#"><span>General Assemblies (GAs)</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="DISEC.html">Disarmament and International Security Committee (DISEC)</a></li>
+                          <li><a href="UNICEF.html">United Nations International Children's Emergency Fund (UNICEF)</a></li>
+                          <li><a href="ECOFIN.html">Economic and Financial Affairs Council (ECOFIN)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Specialized/Regional/ECOFINs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Run.html">Run It Back, Turbo: The Creation of NASCAR, 1947</a></li>
+                          <li><a href="Return.html">Return of the Dynasty: Commanders, 2028</a></li>
+                          <li><a href="Quantum.html">Quantum Leap: NVIDIA’s Semiconductor Revolution</a></li>
+                          <li><a href="The.html">The Scranton Summit: Dunder Mifflin's Demise</a></li>
+                          <li><a href="Operation.html">Operation Infra: INTERPOL’s Global Manhunt (Double-Del)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Crisis Committees</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul class="sub-menu">
+                          <li><a href="Fractured.html">Fractured Allegiance: The Sokovia Accords</a></li>
+                          <li><a href="XOXO.html">XOXO: Gossip Girl</a></li>
+                          <li><a href="JCC_Cali.html">JCC Battle of the Cartels, 1990: Cali</a></li>
+                          <li><a href="JCC_Medellin.html">JCC Battle of the Cartels, 1990: Medellin</a></li>
+                          <li><a href="ByteBlood.html">ByteBlood: The DNA Privacy and Biotech Scandal (Double-Del)</a></li>
+                          <li><a href="Ad-Hoc.html">Ad-Hoc Crisis Committee of the Secretary General</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
-              
+              </li>
+              <li><a href="Schedule.html">Schedule</a></li>
+              <li><a href="Position_Papers.html">Position Papers</a></li>
+              <li><a href="Conference_Policies.html">Conference Policies</a></li>
+              <li><a href="Guest_Speakers.html">Guest Speakers</a></li>
+            </ul>
           </li>
           <li><a href="Forms.html">FORMS</a></li>
           <li><a href="Awards.html">AWARDS</a></li>
-          <li><a href="Contact Us.html">CONTACT US</a></li>
         </ul>
       </nav>
 
@@ -98,13 +168,6 @@
                 <div>
                   <h4 class="title">Emergency Care Form</h4>
                   <a href="https://www.fcps.edu/sites/default/files/media/forms/se3_0.pdf" target = "_blank" class="readmore stretched-link"><span>Open Here</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div>
-                  <h4 class="title">VIMUNC Field Trip Form</h4>
-                  <a href="https://drive.google.com/file/d/1CSk82fcXP389bbXcOs-GFn29LNzfQ9ed/view?usp=sharing" target = "_blank" class="readmore stretched-link"><span>Open Here</span><i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
     

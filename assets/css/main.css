@@ -1,8 +1,8 @@
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Garamond", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-secondary: "Garamond", sans-serif;
 }
 
 /* Colors */
@@ -2091,8 +2091,23 @@ body {
   .index-page .scrolled .header {
       top: 20px; /* Adjust this value to the height of the banner */
   }
+  
+  .invitation-link {
+    display: block;
+  }
 
 @media (max-width: 768px) {
+  .invitation-link {
+    display: block;
+  }
+  
+  .index-page .header {
+    top: 60px; /* Keep consistent with desktop */
+  }
+
+  .index-page .scrolled .header {
+      top: 20px; /* Keep consistent with desktop */
+  }
   .counter-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -2209,6 +2224,45 @@ body {
 
   .featured-services .service-item .readmore {
     justify-content: flex-start;
+  }
+}
+
+/* Add this CSS to your main.css file or in a style tag in the head of your HTML */
+
+/* Style for dropdown menus to appear on the left side instead of right for deeper levels */
+.navbar .dropdown .dropdown:has(.sub-menu .sub-menu) ul {
+  right: 100%;
+  left: auto;
+}
+
+/* Ensure submenus don't overflow screen */
+.navbar .dropdown .dropdown ul.sub-menu ul.sub-menu {
+  left: auto;
+  right: 100%;
+}
+
+/* Make sure all menus are visible on screen */
+@media (min-width: 1024px) {
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+
+  /* Position third-level and deeper dropdowns to open left */
+  .navbar .dropdown .dropdown ul.sub-menu ul.sub-menu {
+    left: auto;
+    right: 100%;
   }
 }
 
